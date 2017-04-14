@@ -1,0 +1,102 @@
+* {
+  font-family: 'Rambla', sans-serif;
+  color: #3d3d3d;
+}
+
+.container, header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+  /*min-height: 150px;*/
+}
+
+.header-txt {
+  width: 85%;
+  text-align: right;
+  margin: auto;
+}
+
+h1 {
+  font-size: 45pt;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 15pt;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: 0px;
+}
+.txt-rt {
+  text-align: right;
+    margin: auto;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #3d3d3d;
+  margin: auto;
+}
+
+.hero {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.feature {
+  width: 33.333333%;
+}
+
+.feature-img {
+  width: 95%;
+  align-content: center;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 0px) {
+  .logo {
+    width: 15%;
+  }
+  .headline {
+    width: 85%;
+  }
+  .subtitle {
+    width: 85%;
+  }
+}
+/*@media screen and (min-width: 550px) {
+  .red {
+    width: 33.3333333%;
+  }
+  .orange {
+    width: 66.666666%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dark_blue {
+    color: blue;
+  }
+}*/
