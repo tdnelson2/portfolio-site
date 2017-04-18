@@ -96,7 +96,7 @@ h3 {
   margin-left: 30px;
 }
 
-h4 {
+.item-name {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 25pt;
@@ -134,7 +134,7 @@ a {
     width: 95%;
   }
 
-  h4 {
+  .item-name {
     font-size: 18pt;
   }
 }
@@ -164,7 +164,7 @@ a {
 }
 
 @media screen and (max-width: 640px) {
-  h4 {
+  .item-name {
     font-size: 16pt;
   }
 }
@@ -183,7 +183,7 @@ a {
     text-align: center;
   }
 
-  h4 {
+  .item-name {
     font-size: 18pt;
   }
 
@@ -206,7 +206,7 @@ a {
     font-size: 16pt;
   }
 
-  h4 {
+  .item-name {
     font-size: 16pt;
   }
 }
