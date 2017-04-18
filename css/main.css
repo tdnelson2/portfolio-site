@@ -14,16 +14,6 @@ body {
   flex-wrap: wrap;
 }
 
-.overlay {
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(132, 132, 254, .3),
-    rgba(254, 132, 132, .3) 1px,
-    rgba(132, 254, 132, .3) 2px,
-    rgba(125, 125, 252, .3) 3px
-  );
-}
-
 .box {
   width: 100%;
 }
@@ -51,10 +41,6 @@ h1, h2 {
   margin-top: 0px;
 }
 
-h3 {
-  color: ;
-  font-size: 25pt;
-}
 .logo {
   width: 7%;
   margin-top: 5px;
@@ -96,7 +82,7 @@ h3 {
   margin-left: 30px;
 }
 
-.item-name {
+h4 {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 25pt;
@@ -134,7 +120,7 @@ a {
     width: 95%;
   }
 
-  .item-name {
+  h4 {
     font-size: 18pt;
   }
 }
@@ -164,7 +150,7 @@ a {
 }
 
 @media screen and (max-width: 640px) {
-  .item-name {
+  h4 {
     font-size: 16pt;
   }
 }
@@ -183,7 +169,7 @@ a {
     text-align: center;
   }
 
-  .item-name {
+  h4 {
     font-size: 18pt;
   }
 
@@ -206,7 +192,7 @@ a {
     font-size: 16pt;
   }
 
-  .item-name {
+  h4 {
     font-size: 16pt;
   }
 }
