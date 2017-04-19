@@ -100,7 +100,7 @@ h4, .ctr-txt, footer {
   text-align: center;
 }
 
-a#plain-link {
+.plain-link {
   text-decoration: none;
 }
 
@@ -172,7 +172,7 @@ div#social a:last-of-type {
     margin-left: 10px;
   }
 
-  a#plain-link {
+  .plain-link {
   	font-size: 10pt;
   }
 }
@@ -204,10 +204,6 @@ div#social a:last-of-type {
   [class*="feature-item-"] {
     width: 70%;
     margin: auto;
-  }
-
-  [class*="zocial-"]:before {
-	  width: 4em;
   }
 
 }
