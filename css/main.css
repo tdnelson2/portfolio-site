@@ -1,4 +1,11 @@
 * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
   font-family: 'Rambla', sans-serif;
   color: #3d3d3d;
 }
@@ -35,7 +42,7 @@ h2 {
   font-size: 15pt;
 }
 
-h1, h2 {
+h1, h2, h4 {
   text-transform: uppercase;
   font-weight: 100;
   margin-top: 0px;
@@ -83,26 +90,43 @@ h1, h2 {
 }
 
 h4 {
-  text-transform: uppercase;
   font-weight: 200;
   font-size: 25pt;
   margin-top: 8px;
   margin-bottom: 0px;
+}
+
+h4, .ctr-txt, footer {
   text-align: center;
 }
 
-.link {
-  margin-top: 2px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-a {
+a#plain-link {
   text-decoration: none;
 }
 
+.sm-margins {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
 
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  width: 2em;
+}
 
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
 
 @media screen and (max-width: 1260px) {
   .header-txt {
@@ -147,6 +171,10 @@ a {
   .feature-item-2, .feature-item-4, .feature-item-6 {
     margin-left: 10px;
   }
+
+  a#plain-link {
+  	font-size: 10pt;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -177,6 +205,11 @@ a {
     width: 70%;
     margin: auto;
   }
+
+  [class*="zocial-"]:before {
+	  width: 4em;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
