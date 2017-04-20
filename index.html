@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tim Nelson's Portfolio</title>
+    <title>Jane Doette's Portfolio</title>
     <meta name="description" content="Portfolio of apps created by Tim Nelson">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Rambla" rel="stylesheet">
     <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
 </head>
-<body>
-    <header class="container">
-        <div class="logo">
+<body class="container">
+    <header class="row">
+        <div class="col-lg-1 col-md-1 col-xs-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewbox="0 0 100 100">
                 <circle cx="37" cy="62" r="25" stroke="rgba(61, 61, 61, 1)" stroke-width="3" fill="rgba(0, 0, 0, 0)"></circle>
                 <circle cx="62" cy="62" r="25" stroke="rgba(61, 61, 61, 1)" stroke-width="3" fill="rgba(0, 0, 0, 0)"></circle>
                 <circle cx="50" cy="37" r="25" stroke="rgba(61, 61, 61, 1)" stroke-width="3" fill="rgba(0, 0, 0, 0)"></circle>
             </svg>
         </div>
-        <div class="header-txt">
-            <h1>JANE DOETTE</h1>
-            <h2>Full stack flamingo</h2>
+        <div class="col-lg-11 col-md-11 col-xs-11 header-txt">
+            <h1 class="title">Jane Doette</h1>
+            <h2 class="subtitle">Front end ninja</h2>
         </div>
     </header>
-    <section class="feature-container">
+    <section>
         <div class="box line"></div>
-        <div class="box">
-            <picture>
-                <source media="(min-width: 1261px)" srcset="images/code-screen-effect-2400w.jpg 2x, images/code-screen-effect-1200w.jpg">
-                <source media="(min-width: 521px)" srcset="images/code-screen-effect-2000w.jpg 2x, images/code-screen-effect-1000w.jpg">
-                <source media="(min-width: 331px)" srcset="images/code-screen-effect-1024w.jpg 2x, images/code-screen-effect-512w.jpg">
-                <img class="hero" src="images/code-screen-effect-342w.jpg" srcset="images/code-screen-effect-684w.jpg 2x, images/code-screen-effect-342w.jpg" alt="Close-up of html code with several &lt;meta&gt; tags">
-            </picture>
+        <div class="row">
+                <picture class="col-xs-12">
+                    <source media="(min-width: 1261px)" srcset="images/code-screen-effect-2400w.jpg 2x, images/code-screen-effect-1200w.jpg">
+                    <source media="(min-width: 521px)" srcset="images/code-screen-effect-2000w.jpg 2x, images/code-screen-effect-1000w.jpg">
+                    <source media="(min-width: 331px)" srcset="images/code-screen-effect-1024w.jpg 2x, images/code-screen-effect-512w.jpg">
+                    <img class="hero" src="images/code-screen-effect-342w.jpg" srcset="images/code-screen-effect-684w.jpg 2x, images/code-screen-effect-342w.jpg" alt="Close-up of html code with several &lt;meta&gt; tags">
+                </picture>
         </div>
-        <div class="box">
-            <h3 class="feature-header">Featured Work</h3>
+        <div class="row">
+            <h3 class="col-xs-12 feature-header">Featured Work</h3>
         </div>
-        <div class="container">
-            <div class="feature-item-1">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/movie-trailer-website-760w.jpg 2x, images/movie-trailer-website-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/movie-trailer-website-720w.jpg 2x, images/movie-trailer-website-360w.jpg">
@@ -47,12 +48,12 @@
                     <source media="(min-width: 331px)" srcset="images/movie-trailer-website-720w.jpg 2x, images/movie-trailer-website-360w.jpg">
                     <img class="box" src="images/movie-trailer-website-240w.jpg" srcset="images/movie-trailer-website-480w.jpg 2x, images/movie-trailer-website-240w.jpg" alt="Close-up of python code with an array of repeating class instances named 'movie'">
                 </picture>
-                <h4>Movie Trailer Website</h4>
+                <h4 class="feature-item-title">Movie Trailer Website</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2/movie-trailer-website/">https://github.com/tdnelson2/movie-trailer/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/movie-trailer/</a>
                 </p>
             </div>
-            <div class="feature-item-2">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/multi-user-blog-760w.jpg 2x, images/multi-user-blog-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/multi-user-blog-720w.jpg 2x, images/multi-user-blog-360w.jpg">
@@ -61,12 +62,12 @@
                     <source media="(min-width: 331px)" srcset="images/multi-user-blog-720w.jpg 2x, images/multi-user-blog-360w.jpg">
                     <img class="box" src="images/multi-user-blog-240w.jpg" srcset="images/multi-user-blog-480w.jpg 2x, images/multi-user-blog-240w.jpg" alt="Close-up of html code with a 'class=&quot;logo&quot;' attribute and &lt;svg&gt; element">
                 </picture>
-                <h4>Multi-User Blog</h4>
+                <h4 class="feature-item-title">Multi-User Blog</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2">https://github.com/tdnelson2/multi-user-blog/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/multi-user-blog/</a>
                 </p>
             </div>
-            <div class="feature-item-3">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/my-game-760w.jpg 2x, images/my-game-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/my-game-720w.jpg 2x, images/my-game-360w.jpg">
@@ -75,12 +76,12 @@
                     <source media="(min-width: 331px)" srcset="images/my-game-720w.jpg 2x, images/my-game-360w.jpg">
                     <img class="box" src="images/my-game-240w.jpg" srcset="images/my-game-480w.jpg 2x, images/my-game-240w.jpg" alt="Close-up of Python code with an 'if/ifelse' statetment containing a variable named 'game_status'">
                 </picture>
-                <h4>My Game</h4>
+                <h4 class="feature-item-title">My Game</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2">https://github.com/tdnelson2/my-game/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/my-game/</a>
                 </p>
             </div>
-            <div class="feature-item-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/neighborhood-map-760w.jpg 2x, images/neighborhood-map-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/neighborhood-map-720w.jpg 2x, images/neighborhood-map-360w.jpg">
@@ -89,12 +90,12 @@
                     <source media="(min-width: 331px)" srcset="images/neighborhood-map-720w.jpg 2x, images/neighborhood-map-360w.jpg">
                     <img class="box" src="images/neighborhood-map-240w.jpg" srcset="images/neighborhood-map-480w.jpg 2x, images/neighborhood-map-240w.jpg" alt="Close-up of html code containing several &lt;script&gt; elements">
                 </picture>
-                <h4>Neighborhood Map</h4>
+                <h4 class="feature-item-title">Neighborhood Map</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2">https://github.com/tdnelson2/map/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/map/</a>
                 </p>
             </div>
-            <div class="feature-item-5">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/linux-server-configuration-760w.jpg 2x, images/linux-server-configuration-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/linux-server-configuration-720w.jpg 2x, images/linux-server-configuration-360w.jpg">
@@ -103,12 +104,12 @@
                     <source media="(min-width: 331px)" srcset="images/linux-server-configuration-720w.jpg 2x, images/linux-server-configuration-360w.jpg">
                     <img class="box" src="images/linux-server-configuration-240w.jpg" srcset="images/linux-server-configuration-480w.jpg 2x, images/linux-server-configuration-240w.jpg" alt="Close-up of a linux command line">
                 </picture>
-                <h4>Linux Web-Server</h4>
+                <h4 class="feature-item-title">Linux Web-Server</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2">https://github.com/tdnelson2/linux-server/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/linux-server/</a>
                 </p>
             </div>
-            <div class="feature-item-6">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <picture>
                     <source media="(min-width: 1261px)" srcset="images/sql-database-760w.jpg 2x, images/sql-database-380w.jpg">
                     <source media="(min-width: 1051px)" srcset="images/sql-database-720w.jpg 2x, images/sql-database-360w.jpg">
@@ -117,9 +118,9 @@
                     <source media="(min-width: 331px)" srcset="images/sql-database-720w.jpg 2x, images/sql-database-360w.jpg">
                     <img class="box" src="images/sql-database-240w.jpg" srcset="images/sql-database-480w.jpg 2x, images/sql-database-240w.jpg" alt="Close-up of code for a SQL database">
                 </picture>
-                <h4>SQL Database</h4>
+                <h4 class="feature-item-title">SQL Database</h4>
                 <p class="ctr-txt sm-margins">
-                    <a id="plain-link" href="https://github.com/tdnelson2">https://github.com/tdnelson2/sql-database/</a>
+                    <a class="plain-link" href="https://github.com/tdnelson2/">https://github.com/tdnelson2/sql-database/</a>
                 </p>
             </div>
         </div>
@@ -130,15 +131,15 @@
         <div class="box line"></div>
         <br>
 		<div id="social">
-			<a id="plain-link" href="#" class="zocial-twitter">Twitter</a>
-			<a id="plain-link" href="#" class="zocial-facebook">Facebook</a>
-			<a id="plain-link" href="#" class="zocial-youtube">Youtube</a>
-			<a id="plain-link" href="#" class="zocial-vimeo">Vimeo</a>
-			<a id="plain-link" href="#" class="zocial-github">GitHub</a>
+			<a href="#" class="zocial-twitter plain-link"></a>
+			<a href="#" class="zocial-facebook plain-link"></a>
+			<a href="#" class="zocial-youtube plain-link"></a>
+			<a href="#" class="zocial-vimeo plain-link"></a>
+			<a href="#" class="zocial-github plain-link"></a>
 		</div>
 		<br>
 		<p>
-			<a href="https://github.com/tdnelson2">View this page on GitHub</a>
+			<a href="https://github.com/tdnelson2/portfolio-site/">View this page on GitHub</a>
 		</p>
     </footer>
 </body>
