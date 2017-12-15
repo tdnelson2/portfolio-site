@@ -38,9 +38,12 @@ body {
 }
 
 .title, .subtitle, .feature-item-title {
-  text-transform: uppercase;
   font-weight: 100;
   margin-top: 0px;
+}
+
+.title, .subtitle, .feature-item-title, .feature-header {
+  text-transform: uppercase;
 }
 
 .line {
@@ -64,7 +67,7 @@ body {
 .feature-header {
   margin-bottom: 10px;
   font-weight: 100;
-  font-size: 40pt;
+  font-size: 30pt;
   letter-spacing: 3px;
 /*  color: #909090;*/
 }
@@ -115,7 +118,7 @@ div#social a:last-of-type {
 @media screen and (max-width: 1199px) {
 
   .feature-header {
-    font-size: 35pt;
+    font-size: 25pt;
     margin-top: 20px;
   }
 
@@ -151,7 +154,7 @@ div#social a:last-of-type {
   }
 
   .feature-header {
-    font-size: 25pt;
+    font-size: 22pt;
     text-align: center;
   }
 
