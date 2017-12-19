@@ -10,6 +10,18 @@
   color: #e5e5e5;
 }
 
+a:focus {
+  color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e5e5e5;
+}
+
 body {
   width: 100%;
   max-width: 1200px;
@@ -83,12 +95,16 @@ body {
   text-align: center;
 }
 
-.plain-link {
-  text-decoration: none;
+div#text-links {
+  margin-bottom: 3em;
 }
 
-.plain-link:hover {
-  color: #e5e5e5;
+div#text-links a {
+  margin: 0 1em 0 0;
+}
+
+div#text-links a:last-of-type {
+  margin: 0;
 }
 
 .sm-margins {
