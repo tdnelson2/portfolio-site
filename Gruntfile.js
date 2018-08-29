@@ -7,17 +7,19 @@
 */
 
 module.exports = function(grunt) {
-
+  const quality = 90;
+  const suffix = 'w';
   grunt.initConfig({
     responsive_images: {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            width: 760,
-            suffix: 'w',
-            quality: 90
-          }]
+          sizes: [
+            { width: 240,  quality, suffix },
+            { width: 360,  quality, suffix },
+            { width: 380,  quality, suffix },
+            { width: 480,  quality, suffix },
+            { width: 720,  quality, suffix }]
         },
 
         /*
