@@ -15,12 +15,25 @@ var projects = [{
   description: '<p>The API for the Restaurant Reviews app.</p>'+
                '<p>NOTE: In the <a href="https://restaurant-reviews-offline.firebaseapp.com/">Live example</a>, when attempting to submit data to the API, it simulates offline use: The data gets stored in IndexedDB and a snackbar message informs the user that the network is unavailable and data will be submited once connectivity is restored.</p>'
 },{
+  id: 'log-analysis',
+  title: 'Log Database Analysis',
+  githubURL: 'https://github.com/tdnelson2/Log-Database-Analysis',
+  technogies: ['PostgreSQL', 'Psycopg2'],
+  description: '<p>A command line app for answering specific questions by analyzing a large database.</p>'
+},{
   id: 'money-mapper',
   title: 'MoneyMapper',
   url: 'https://moneymapper.herokuapp.com/',
   githubURL: 'https://github.com/tdnelson2/money-mapper',
   technogies: ['Angular 5', 'ES6', 'Typescript', 'moment.js', 'Picsum API', 'NYTimes API', 'Bootstrap'],
   description: '<p>An app for determining which months in the upcoming year will be lean months and which will be bumper months.</p>'
+},{
+  id: 'tournament-mananger-react',
+  title: 'Swiss Style Tournament Manager: React',
+  url: 'https://timothynelson.me/react-tournament-manager/',
+  githubURL: 'https://github.com/tdnelson2/Swiss-Tournament-Manager-React',
+  technogies: ['React', 'ES6', 'Material-UI', 'flip move', 'JSS'],
+  description: '<p>A frontend React app for managing a Swiss style tournament.</p>'
 },{
   id: 'partner-map',
   title: 'Partner Map',
@@ -63,7 +76,9 @@ $('#moreDetailsModal').on('show.bs.modal', function(e) {
       titleEl.html(data.title);
       descriptionEl.html(data.description);
       technogiesEl.html(data.technogies.join(', '));
-      projectLinkEl.html(linkHTML+data.url+'">Live example</a>');
+      if (data.hasOwnProperty('url')) {
+        projectLinkEl.html(linkHTML+data.url+'">Live example</a>');
+      }
       repoLinkEl.html(linkHTML+data.githubURL+'">Repo</a>');
     } else {
       titleEl.html('ERROR');

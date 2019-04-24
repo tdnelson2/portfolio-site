@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /Users/editor/.yarn/bin/yarn.js grunt
+
+PATH: 
+  /Users/editor/.yarn/bin:/Users/editor/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "reponsive-images",
+    "version": "0.1.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/udacity/responsive-images.git"
+    },
+    "devDependencies": {
+      "grunt": "^0.4.5",
+      "grunt-contrib-clean": "~0.6.0",
+      "grunt-contrib-copy": "~0.8.0",
+      "grunt-contrib-jshint": "~0.10.0",
+      "grunt-contrib-nodeunit": "~0.4.1",
+      "grunt-contrib-uglify": "~0.5.0",
+      "grunt-mkdir": "~0.1.2"
+    },
+    "dependencies": {
+      "grunt-responsive-images": "^0.1.6"
+    },
+    "description": "This is the website I will use to showcase my work. ## Use To add different images, add them to `images_src`, edit `Gruntfile.js` with desired width, then run the `grunt` command within the folder. Repeat for each width. ## Future improvements * Add modals for each featured item to display additional information about each project * Create better images for the featured items * Experiment with overlaying a screen-effect pattern on the images in order to overcome the aliasing and loss of detail as the images scale * Add additional featured items for native code projects I've worked on in a separate section titled \"Native\"",
+    "bugs": {
+      "url": "https://github.com/udacity/responsive-images/issues"
+    },
+    "homepage": "https://github.com/udacity/responsive-images#readme",
+    "main": "Gruntfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command "grunt" not found.
+      at new MessageError (/Users/editor/.yarn/lib/cli.js:186:110)
+      at /Users/editor/.yarn/lib/cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (/Users/editor/.yarn/lib/cli.js:98:30)
+      at /Users/editor/.yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/Users/editor/.yarn/lib/cli.js:23451:28)
+      at /Users/editor/.yarn/lib/cli.js:95:12
+      at runCommand (/Users/editor/.yarn/lib/cli.js:87312:22)
+      at Object.<anonymous> (/Users/editor/.yarn/lib/cli.js:87412:14)
