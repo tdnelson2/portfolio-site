@@ -78,6 +78,8 @@ $('#moreDetailsModal').on('show.bs.modal', function(e) {
       technogiesEl.html(data.technogies.join(', '));
       if (data.hasOwnProperty('url')) {
         projectLinkEl.html(linkHTML+data.url+'">Live example</a>');
+      } else {
+        projectLinkEl.html('');
       }
       repoLinkEl.html(linkHTML+data.githubURL+'">Repo</a>');
     } else {
